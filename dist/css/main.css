@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #eae5e5;
+  font-family: 'Roboto', 'Microsoft JhengHei', sans-serif;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+header {
+  padding: 3rem 0; }
+  header .container {
+    display: flex;
+    padding: 0 5rem;
+    align-items: flex-end; }
+    header .container .author {
+      text-transform: capitalize;
+      color: #4d4d4d; }
+      header .container .author .name {
+        font-size: 3rem;
+        font-weight: 500; }
+      header .container .author .authorIntro {
+        font-weight: 500; }
+    header .container .nav {
+      margin-left: 2rem; }
+      header .container .nav a {
+        padding: 0 1rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        color: #999;
+        transition: 0.5s ease; }
+        header .container .nav a:hover {
+          color: #61d0d4; }

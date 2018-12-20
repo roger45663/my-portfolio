@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+//start color setup
+$primaryColor: #e83556;
+$secondaryColor: #61d0d4;
+$skillColor: #d1c926;
+$bgColor: #eae5e5;
+$titleColor: #4d4d4d;
+
+//end color setup
+
+// start mixin
+@mixin ease {
+    transition: 0.5s ease;
+}
+
+// end mixin
+
+//start global setup
+html,body {
+    margin: 0;
+    padding: 0;
+    background: $bgColor;
+    font-family: 'Roboto', 'Microsoft JhengHei', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+//end global setup
+
+//start header
+header {
+    padding: 3rem 0;
+
+    .container {
+        display: flex;
+        padding: 0 5rem;
+        align-items: flex-end;
+
+        .author {
+            text-transform: capitalize;
+            color: $titleColor;
+
+            .name {
+                font-size: 3rem;
+                font-weight: 500;
+            }
+
+            .authorIntro {
+                font-weight: 500;
+            }
+        }
+
+        .nav {
+            margin-left: 2rem;
+
+            a {
+                padding: 0 1rem;
+                font-weight: 600;
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                color: #999;
+                @include ease;
+
+                &:hover {
+                    color: $secondaryColor;
+                }
+            }
+        }
+    }
+}
+
+//end header
