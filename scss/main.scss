@@ -1,36 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+@import 'config';
 
-//start color setup
-$primaryColor: #e83556;
-$secondaryColor: #61d0d4;
-$skillColor: #d1c926;
-$bgColor: #eae5e5;
-$titleColor: #4d4d4d;
-
-//end color setup
-
-// start mixin
-@mixin ease {
-    transition: 0.5s ease;
-}
-
-// end mixin
 
 //start global setup
+* {
+    box-sizing: border-box;
+}
+
 html,body {
     margin: 0;
     padding: 0;
     background: $bgColor;
     font-family: 'Roboto', 'Microsoft JhengHei', sans-serif;
-    box-sizing: border-box;
 }
 
 .container {
     max-width: 1024px;
     margin: 0 auto;
+    padding: 0 5%;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,p {
     margin: 0;
 }
 
@@ -46,12 +36,12 @@ header {
 
     .container {
         display: flex;
-        padding: 0 5rem;
         align-items: flex-end;
 
         .author {
             text-transform: capitalize;
             color: $titleColor;
+            margin-left: 5%;
 
             .name {
                 font-size: 3rem;
@@ -83,3 +73,174 @@ header {
 }
 
 //end header
+
+// start home page
+#home {
+    margin: 5rem 0;
+
+    .container {
+        display: flex;
+
+        .portrait {
+
+            img {
+                max-width: 380px;
+                height: auto;
+                border-radius: 50%;
+            }
+        }
+
+        .aboutMe {
+            margin-left: 5%;
+            color: #888;
+
+            h2,h3 {
+                color: $titleColor;
+            }
+
+            h2 {
+                font-size: 5rem;
+            }
+
+            h3 {
+                font-size: 3rem;
+                font-weight: 300;
+            }
+
+            p {
+                line-height: 1.3rem;
+            }
+
+            .myBar {
+                display: flex;
+                margin: 1.5rem 0;
+                
+                .circle {
+                    width: 130px;
+                    height: auto;
+                    margin-right: 1.5rem;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 130px;
+                    font-weight: 300;
+                    font-size: 0.9rem;
+                    text-transform: uppercase;
+                    background: $primaryColor;
+                    color: #fff;
+                    @include ease;
+
+                    &.work {
+                        background: $secondaryColor;
+                    }
+
+                    &.skills {
+                        background: $skillColor;
+                    }
+
+                    &:hover {
+                        opacity: 0.8;
+                        transform: scale(1.1) rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// end home page
+
+// start resume page
+#resume {
+    .container {
+        display: flex;
+
+        .resumeInfo {
+
+            h1 {
+                color: $titleColor;
+                font-size: 5rem;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            hr {
+                margin: 2rem 0;
+            }
+
+            .intro {
+                display: flex;
+
+                h3 {
+                    width: 130px;
+                    height: 130px;
+                    font-size: 1rem;
+                    border-radius: 50%;
+                    padding: 50px 0;
+                    text-align: center;
+                    background: $primaryColor;
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+}
+
+// end resume page
+
+
+// start footer
+footer {
+    background: $primaryColor;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .info {
+            display: flex;
+            color: #fff;
+            font-size: 0.5rem;
+
+            .fas, .far {
+                width: 2.5rem;
+                height: 2.5rem;
+                margin-right: 1rem;
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                border-radius: 50%;
+                text-align: center;
+                color: $primaryColor;
+                background: $secondaryColor;
+            }
+
+            .socialMedia {
+                margin-top: 0.5rem;
+
+                a {
+                    margin-right: 0.5rem;
+
+                    .fab {
+                        color: #fff;
+                        font-size: 1rem;
+                        @include ease;
+                        &:hover {
+                            transform: scale(1.3);
+                        }
+                    }
+                }
+
+                
+            }
+            
+
+            p {
+                line-height: 1.2rem;
+            }
+        }
+    }
+}
+
+// end footer

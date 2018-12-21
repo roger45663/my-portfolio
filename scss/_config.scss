@@ -1,0 +1,15 @@
+//start color setup
+$primaryColor: #e83556;
+$secondaryColor: #61d0d4;
+$skillColor: #d1c926;
+$bgColor: #eae5e5;
+$titleColor: #4d4d4d;
+
+//end color setup
+
+// start mixin
+@mixin ease {
+    transition: 0.5s ease;
+}
+
+// end mixin

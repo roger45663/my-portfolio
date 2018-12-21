@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+* {
+  box-sizing: border-box; }
+
 html, body {
   margin: 0;
   padding: 0;
   background: #eae5e5;
-  font-family: 'Roboto', 'Microsoft JhengHei', sans-serif;
-  box-sizing: border-box; }
+  font-family: 'Roboto', 'Microsoft JhengHei', sans-serif; }
 
 .container {
   max-width: 1024px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 5%; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0; }
 
 a {
@@ -20,11 +23,11 @@ header {
   padding: 3rem 0; }
   header .container {
     display: flex;
-    padding: 0 5rem;
     align-items: flex-end; }
     header .container .author {
       text-transform: capitalize;
-      color: #4d4d4d; }
+      color: #4d4d4d;
+      margin-left: 5%; }
       header .container .author .name {
         font-size: 3rem;
         font-weight: 500; }
@@ -41,3 +44,102 @@ header {
         transition: 0.5s ease; }
         header .container .nav a:hover {
           color: #61d0d4; }
+
+#home {
+  margin: 5rem 0; }
+  #home .container {
+    display: flex; }
+    #home .container .portrait img {
+      max-width: 380px;
+      height: auto;
+      border-radius: 50%; }
+    #home .container .aboutMe {
+      margin-left: 5%;
+      color: #888; }
+      #home .container .aboutMe h2, #home .container .aboutMe h3 {
+        color: #4d4d4d; }
+      #home .container .aboutMe h2 {
+        font-size: 5rem; }
+      #home .container .aboutMe h3 {
+        font-size: 3rem;
+        font-weight: 300; }
+      #home .container .aboutMe p {
+        line-height: 1.3rem; }
+      #home .container .aboutMe .myBar {
+        display: flex;
+        margin: 1.5rem 0; }
+        #home .container .aboutMe .myBar .circle {
+          width: 130px;
+          height: auto;
+          margin-right: 1.5rem;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 130px;
+          font-weight: 300;
+          font-size: 0.9rem;
+          text-transform: uppercase;
+          background: #e83556;
+          color: #fff;
+          transition: 0.5s ease; }
+          #home .container .aboutMe .myBar .circle.work {
+            background: #61d0d4; }
+          #home .container .aboutMe .myBar .circle.skills {
+            background: #d1c926; }
+          #home .container .aboutMe .myBar .circle:hover {
+            opacity: 0.8;
+            transform: scale(1.1) rotate(360deg); }
+
+#resume .container {
+  display: flex; }
+  #resume .container .resumeInfo h1 {
+    color: #4d4d4d;
+    font-size: 5rem;
+    font-weight: 400;
+    text-transform: uppercase; }
+  #resume .container .resumeInfo hr {
+    margin: 2rem 0; }
+  #resume .container .resumeInfo .intro {
+    display: flex; }
+    #resume .container .resumeInfo .intro h3 {
+      width: 130px;
+      height: 130px;
+      font-size: 1rem;
+      border-radius: 50%;
+      padding: 50px 0;
+      text-align: center;
+      background: #e83556;
+      color: #fff; }
+
+footer {
+  background: #e83556;
+  padding: 2rem 0;
+  margin-bottom: 3rem; }
+  footer .container {
+    display: flex;
+    justify-content: space-between; }
+    footer .container .info {
+      display: flex;
+      color: #fff;
+      font-size: 0.5rem; }
+      footer .container .info .fas, footer .container .info .far {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        border-radius: 50%;
+        text-align: center;
+        color: #e83556;
+        background: #61d0d4; }
+      footer .container .info .socialMedia {
+        margin-top: 0.5rem; }
+        footer .container .info .socialMedia a {
+          margin-right: 0.5rem; }
+          footer .container .info .socialMedia a .fab {
+            color: #fff;
+            font-size: 1rem;
+            transition: 0.5s ease; }
+            footer .container .info .socialMedia a .fab:hover {
+              transform: scale(1.3); }
+      footer .container .info p {
+        line-height: 1.2rem; }
