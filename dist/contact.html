@@ -19,38 +19,37 @@
                 <h3 class="authorIntro">web programmer</h3>
             </div>
             <div class="nav">
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
                 <a href="resume.html">Resume</a>
                 <a href="project.html">Projects</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="btnHam">
-                <span class="btnLine"></span>
-                <span class="btnLine"></span>
-                <span class="btnLine"></span>
+                <a href="#">Contact</a>
             </div>
         </div>
     </header>
 
-    <main id="home">
+    <main id="contact">
         <div class="container">
-            <div class="portrait">
-                <img src="images/portrait.jpg" alt="portrait">
-            </div>
-            <div class="aboutMe">
-                <h2>Hello,</h2>
-                <h3>a bit about me:</h3>
-                <div class="myBar">
-                    <a class='circle resume' href="resume.html">My Resume</a>
-                    <a class='circle work' href="project.html">My Work</a>
-                    <a class='circle skills' href="resume.html">My Skills</a>
+            <div class="contactInfo">
+                <h1>Contact</h1>
+                <div class="socialContact">
+                    <div class="contactIcon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a> 
+                        <a href="#"><i class="fab fa-github"></i></a> 
+                    </div>
+                    <ul>
+                        <li><span>Cell </span>0934-336-461</li>
+                        <li><span>Email </span>roger45663</li>
+                    </ul>
                 </div>
-                <p class="myIntro">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo labore eos ipsam repellendus, saepe
-                    mollitia obcaecati tempore corrupti et voluptates debitis? Sapiente harum eos debitis dolorum nisi
-                    totam cum, accusantium beatae reiciendis non ratione recusandae aspernatur pariatur consequuntur
-                    saepe quis facilis tempora architecto doloremque eum odio consectetur autem! Harum, odit.
-                </p>
+            </div>
+            <div class="contactForm">
+                <form action="POST">
+                    <input type="text" name="name" id="" placeholder="Name*">
+                    <input type="email" name="email" id="" placeholder="Email*">
+                    <input type="text" name="subject" id="" placeholder="Subject">
+                    <textarea class="contactMsg" name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button type="submit" class="btnSend">Send</button>
+                </form>
             </div>
         </div>
     </main>

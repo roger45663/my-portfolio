@@ -1,0 +1,87 @@
+@import 'config';
+
+// start mobile 768px
+@media screen and (max-width: 768px) {
+    // start header page
+    header {
+        .container {
+            align-items: baseline;
+
+            .author {
+                width: 80%;
+            }
+
+            .nav {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 0;
+
+                a {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    // end header page
+
+    // start home page
+    #home {
+        margin-top: 0;
+        margin-bottom: 15rem;
+
+        .container{
+            flex-direction: column-reverse;
+
+            .portrait {
+                margin: 0 auto;
+            }
+
+            .myIntro {
+                position: absolute;
+                top: 1000px;
+                padding-right: 5%;
+            }
+        }
+    }
+
+    // end home page
+}
+
+// end mobile 768px
+
+// start mobile under 767px 
+@media screen and (max-width: 767px) {
+    // start header page
+    header {
+        .container {
+            flex-direction: column;
+
+            .btnHam {
+                width: 50px;
+                height: 50px;
+                background: $titleColor;
+                border-radius: 5px;
+                padding-top: 0.7rem;
+                position: fixed;
+                top: 50px;
+                right: 20px;
+                cursor: pointer;
+
+                .btnLine {
+                    display: block;
+                    width: 60%;
+                    height: 3px;
+                    margin: 0 auto;
+                    margin-bottom: 0.6rem;
+                    background: #fff;
+                }
+            }
+        }
+    }
+
+    // end header page
+}
+
+// end mobile under 767px 

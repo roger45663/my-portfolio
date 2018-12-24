@@ -2,6 +2,7 @@
 @import 'config';
 
 
+
 //start global setup
 * {
     box-sizing: border-box;
@@ -17,11 +18,13 @@ html,body {
 .container {
     max-width: 1024px;
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 0 3%;
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1,h2,h3,h4,h5,h6,p,ul {
     margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 a {
@@ -113,12 +116,14 @@ header {
 
             .myBar {
                 display: flex;
+                flex-wrap: wrap;
                 margin: 1.5rem 0;
                 
                 .circle {
                     width: 130px;
                     height: auto;
                     margin-right: 1.5rem;
+                    margin-top: 1.5rem;
                     border-radius: 50%;
                     text-align: center;
                     line-height: 130px;
@@ -151,10 +156,14 @@ header {
 
 // start resume page
 #resume {
+    margin-bottom: 5rem;
+
     .container {
         display: flex;
-
+        
         .resumeInfo {
+            width: 65%;
+            margin: 0 5%;
 
             h1 {
                 color: $titleColor;
@@ -169,18 +178,85 @@ header {
 
             .intro {
                 display: flex;
+                align-items: center;
 
-                h3 {
-                    width: 130px;
-                    height: 130px;
-                    font-size: 1rem;
+
+                .circle {
+                    width: 120px;
+                    height: 120px;
                     border-radius: 50%;
-                    padding: 50px 0;
-                    text-align: center;
+                    text-align: left;
+                    padding: 40px 10px;
+                    margin-right: 1.5rem;
+                    font-size: 0.9rem;
                     background: $primaryColor;
                     color: #fff;
+
+                    h3 {
+                        font-weight: 400;
+                    }
+                }
+
+                .context {
+                    flex: 8;
+
+                    h4 {
+                        color: $titleColor;
+                        font-weight: 400;
+                        line-height: 1.4rem;
+                        margin-bottom: 1rem;
+                    }
+
+                    p {
+                        color: #4D4D4D;
+                        font-size: 0.8rem;
+                        line-height: 1.2rem;
+                    }
+                }
+
+                &.education {
+                    .circle {
+                        padding: 50px 10px;
+                    }
                 }
             }
+        }
+
+        .mySkill {
+            width: 20%;
+            margin-right: 5%;
+            margin-top: 8rem;
+
+            .fas {
+                    width: 40px;
+                    height: 40px;
+                    background: $secondaryColor;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    border-radius: 50%;
+                    text-align: center;
+                    padding-top: 0.5rem;
+            }
+
+            h4 {
+                text-transform: capitalize;
+                color: $titleColor; 
+                font-weight: 400;
+                margin: 1rem 0;
+            }
+
+            li {
+                color: #4D4D4D;
+                text-transform: uppercase;
+                font-size: 0.9rem;
+                line-height: 1.3rem;
+            }
+
+            .skill {
+                margin-bottom: 3rem;
+            }
+
+            
         }
         
     }
@@ -188,6 +264,163 @@ header {
 
 // end resume page
 
+// start project page
+#project {
+    margin: 3rem 0;
+
+    .projectLatest {
+        padding: 0 5%;
+
+        h1 {
+            color: $titleColor;
+            font-size: 5rem;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        .project {
+            display: flex;
+            margin: 3rem 0;
+
+            .slideImg {
+                margin-right: 5%;
+            }
+
+            .projectIntro {
+                .circle {
+                    width: 96px;
+                    height: 96px;
+                    background: $secondaryColor;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 96px;
+
+                    h3 {
+                        color: #fff;
+                        font-weight: 400;
+                        font-size: 1.1rem;
+                    }
+                }
+
+                h3 {
+                    color: $titleColor;
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                    margin-bottom: 1.5rem;
+                }
+
+                p {
+                    color: #4D4D4D;
+                    font-size: 0.9rem;
+                    line-height: 1.3rem;
+                }
+
+                hr {
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
+    
+}
+
+// end project page
+
+// start contact page
+#contact {
+    margin-top: 3rem;
+    margin-bottom: 8rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .contactInfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 5%;
+
+            h1 {
+                font-size: 5rem;
+                font-weight: 400;
+                color: $titleColor;
+            }
+
+            .socialContact {
+                .contactIcon {
+                    margin-bottom: 1rem;
+
+                    .fab {
+                        width: 30px;
+                        height: 30px;
+                        color: $bgColor;
+                        background: #000;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 30px;
+                        @include ease;
+
+                        &:hover {
+                            opacity: 0.7;
+                        }
+                    }
+                }
+
+                li {
+                    font-size: 0.8rem;
+
+                    span {
+                        font-size: 0.9rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        
+        .contactForm {
+            margin-right: 5%;
+            width: 50%;
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                input, .contactMsg {
+                    background: $primaryColor;
+                    resize: none;
+                    margin-bottom: 0.3rem;
+                    padding: 0.6rem;
+                    outline: none;
+                    border: none;
+                    
+                    &::placeholder {
+                        color: #fff;
+                        font-size: 0.9rem;
+                        letter-spacing: 0.1rem;
+                    }
+                }
+
+                .btnSend {
+                    width: 4rem;
+                    margin-left: auto;
+                    padding: 5px 0;
+                    font-size: 1rem;
+                    background: $secondaryColor;
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+
+                    &:hover, &:focus {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// end contact page
 
 // start footer
 footer {
@@ -244,3 +477,5 @@ footer {
 }
 
 // end footer
+
+@import 'mobile';
