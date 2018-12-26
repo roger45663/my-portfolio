@@ -1,6 +1,6 @@
 @import 'config';
 
-// start ssize 768px
+// start xl size 768px
 @media screen and (max-width: 768px) {
     // start header page
     header {
@@ -29,18 +29,27 @@
     // start home page
     #home {
         margin-top: 0;
-        margin-bottom: 15rem;
+        margin-bottom: 4rem;
 
         .container{
-            flex-direction: column-reverse;
+            flex-direction: column;
 
             .portrait {
-                margin: 0 auto;
+                display: none;
+            }
+
+            .portraitMobile {
+                display: block;
+                text-align: center;
+                margin: 2.5rem 0;
+
+                img {
+                    width: 80%;
+                    border-radius: 50%;
+                }
             }
 
             .myIntro {
-                position: absolute;
-                top: 1000px;
                 padding-right: 5%;
             }
         }
@@ -49,9 +58,9 @@
     // end home page
 }
 
-// end size 768px
+// end xl size 768px
 
-// start mobile under 767px 
+// start lg size 767px 
 @media screen and (max-width: 767px) {
     
     // start header page
@@ -150,6 +159,22 @@
 
     // end header page
 
+    // start home page
+    #home {
+        .container {
+            .aboutMe {
+                .myBar {
+                    .circle {
+                        width: 100px;
+                        line-height: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+    // end home page
+
     // start footer page
     footer {
         .container {
@@ -165,4 +190,123 @@
     // end footer page
 }
 
-// end mobile under 767px 
+// end lg size 767px 
+
+
+// start md size 450px 
+@media screen and (max-width: 450px) {
+    // start header
+    header {
+        padding: 2rem 0;
+    }
+
+    // end header
+
+    // start home page
+    #home {
+        .container {
+            .aboutMe {
+                h2 {
+                    font-size: 4rem;
+                }
+
+                h3 {
+                    font-size: 2.5rem;
+                }
+
+                .myBar {
+                    .circle {
+                        width: 80px;
+                        line-height: 80px;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // end home page
+
+    // start footer
+    footer {
+        .container {
+            flex-direction: column;
+
+            .info {
+                width: 100%;
+                align-items: center;
+
+                .icon {
+                    .fas,.far {
+                        width: 4rem;
+                        height: 4rem;
+                        font-size: 2rem;
+                        line-height: 4rem;
+                    }
+                }
+
+                h6 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+
+                .infoFollow {
+                    .socialMedia {
+                        .fab {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    // end footer
+}
+
+// end md size 450px 
+
+// start sm size 375px 
+@media screen and (max-width: 375px) {
+    // start header
+    header {
+        .container {
+            .author {
+                .name {
+                    font-size: 2rem;
+                }
+            }
+        }
+        
+    }
+    // end header
+
+    // start home page
+    #home {
+        .container {
+            .aboutMe {
+                h2 {
+                    font-size: 3rem;
+                }
+
+                h3 {
+                    font-size: 2rem;
+                }
+
+                .myBar {
+                    margin: 0;
+
+                    .circle {
+                        margin-right: 5%;
+                    }
+                }
+            }
+        }
+    }
+    // end home page
+}
+
+// end sm size 375px

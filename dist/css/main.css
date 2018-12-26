@@ -57,6 +57,8 @@ header {
       max-width: 380px;
       height: auto;
       border-radius: 50%; }
+    #home .container .portraitMobile {
+      display: none; }
     #home .container .aboutMe {
       margin-left: 5%;
       color: #888; }
@@ -310,14 +312,19 @@ footer {
         margin-bottom: 1rem; }
   #home {
     margin-top: 0;
-    margin-bottom: 15rem; }
+    margin-bottom: 4rem; }
     #home .container {
-      flex-direction: column-reverse; }
+      flex-direction: column; }
       #home .container .portrait {
-        margin: 0 auto; }
+        display: none; }
+      #home .container .portraitMobile {
+        display: block;
+        text-align: center;
+        margin: 2.5rem 0; }
+        #home .container .portraitMobile img {
+          width: 80%;
+          border-radius: 50%; }
       #home .container .myIntro {
-        position: absolute;
-        top: 1000px;
         padding-right: 5%; } }
 
 @media screen and (max-width: 767px) {
@@ -382,8 +389,51 @@ footer {
     top: 50%;
     left: 20%;
     transform: rotate(-405deg); }
+  #home .container .aboutMe .myBar .circle {
+    width: 100px;
+    line-height: 100px; }
   footer .container {
     flex-wrap: wrap; }
     footer .container .info {
       width: 50%;
       margin-bottom: 1rem; } }
+
+@media screen and (max-width: 450px) {
+  header {
+    padding: 2rem 0; }
+  #home .container .aboutMe h2 {
+    font-size: 4rem; }
+  #home .container .aboutMe h3 {
+    font-size: 2.5rem; }
+  #home .container .aboutMe .myBar .circle {
+    width: 80px;
+    line-height: 80px;
+    font-size: 0.8rem; }
+  footer .container {
+    flex-direction: column; }
+    footer .container .info {
+      width: 100%;
+      align-items: center; }
+      footer .container .info .icon .fas, footer .container .info .icon .far {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+        line-height: 4rem; }
+      footer .container .info h6 {
+        font-size: 1.5rem; }
+      footer .container .info p {
+        font-size: 1rem; }
+      footer .container .info .infoFollow .socialMedia .fab {
+        font-size: 1.5rem; } }
+
+@media screen and (max-width: 375px) {
+  header .container .author .name {
+    font-size: 2rem; }
+  #home .container .aboutMe h2 {
+    font-size: 3rem; }
+  #home .container .aboutMe h3 {
+    font-size: 2rem; }
+  #home .container .aboutMe .myBar {
+    margin: 0; }
+    #home .container .aboutMe .myBar .circle {
+      margin-right: 5%; } }

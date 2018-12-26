@@ -87,12 +87,15 @@ header {
         display: flex;
 
         .portrait {
-
             img {
                 max-width: 380px;
                 height: auto;
                 border-radius: 50%;
             }
+        }
+
+        .portraitMobile {
+            display: none;
         }
 
         .aboutMe {
