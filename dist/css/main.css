@@ -130,15 +130,16 @@ header {
           flex: 8; }
           #resume .container .resumeInfo .intro .context h4 {
             color: #4d4d4d;
-            font-weight: 400;
+            font-weight: 700;
             line-height: 1.4rem;
-            margin-bottom: 1rem; }
+            margin-bottom: 0.3rem; }
           #resume .container .resumeInfo .intro .context p {
             color: #4D4D4D;
-            font-size: 0.8rem;
-            line-height: 1.2rem; }
+            line-height: 1.6rem; }
         #resume .container .resumeInfo .intro.education .circle {
           padding: 50px 10px; }
+      #resume .container .resumeInfo .intro.workExp .context .workPart {
+        margin-bottom: 2rem; }
     #resume .container .mySkill {
       width: 20%;
       margin-right: 5%;
@@ -178,29 +179,34 @@ header {
       display: flex;
       margin: 3rem 0; }
       #project .projectLatest .project .slideImg {
-        margin-right: 5%; }
-      #project .projectLatest .project .projectIntro .circle {
-        width: 96px;
-        height: 96px;
-        background: #61d0d4;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 96px; }
-        #project .projectLatest .project .projectIntro .circle h3 {
-          color: #fff;
+        margin-right: 5%;
+        flex: 5; }
+        #project .projectLatest .project .slideImg img {
+          width: 100%; }
+      #project .projectLatest .project .projectIntro {
+        flex: 5; }
+        #project .projectLatest .project .projectIntro .circle {
+          width: 96px;
+          height: 96px;
+          background: #61d0d4;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 96px; }
+          #project .projectLatest .project .projectIntro .circle h3 {
+            color: #fff;
+            font-weight: 400;
+            font-size: 1.1rem; }
+        #project .projectLatest .project .projectIntro h3 {
+          color: #4d4d4d;
+          font-size: 1.1rem;
           font-weight: 400;
-          font-size: 1.1rem; }
-      #project .projectLatest .project .projectIntro h3 {
-        color: #4d4d4d;
-        font-size: 1.1rem;
-        font-weight: 400;
-        margin-bottom: 1.5rem; }
-      #project .projectLatest .project .projectIntro p {
-        color: #4D4D4D;
-        font-size: 0.9rem;
-        line-height: 1.3rem; }
-      #project .projectLatest .project .projectIntro hr {
-        margin: 1rem 0; }
+          margin-bottom: 1.5rem; }
+        #project .projectLatest .project .projectIntro p {
+          color: #4D4D4D;
+          font-size: 0.9rem;
+          line-height: 1.3rem; }
+        #project .projectLatest .project .projectIntro hr {
+          margin: 1rem 0; }
 
 #contact {
   margin-top: 3rem;
@@ -216,6 +222,7 @@ header {
       #contact .container .contactInfo h1 {
         font-size: 5rem;
         font-weight: 400;
+        margin-right: 2rem;
         color: #4d4d4d; }
       #contact .container .contactInfo .socialContact .contactIcon {
         margin-bottom: 1rem; }
@@ -392,6 +399,62 @@ footer {
   #home .container .aboutMe .myBar .circle {
     width: 100px;
     line-height: 100px; }
+  #resume .container {
+    flex-direction: column; }
+    #resume .container .resumeInfo {
+      width: 90%; }
+    #resume .container .mySkill {
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 6rem; }
+      #resume .container .mySkill li {
+        margin-bottom: 1rem; }
+      #resume .container .mySkill.showLineBar .line {
+        width: 90%;
+        height: 1rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        background: #e83556; }
+        #resume .container .mySkill.showLineBar .line .percent {
+          background: #61d0d4;
+          height: 100%; }
+        #resume .container .mySkill.showLineBar .line .per90 {
+          width: 90%; }
+        #resume .container .mySkill.showLineBar .line .per80 {
+          width: 80%; }
+        #resume .container .mySkill.showLineBar .line .per70 {
+          width: 70%; }
+        #resume .container .mySkill.showLineBar .line .per60 {
+          width: 60%; }
+        #resume .container .mySkill.showLineBar .line .per50 {
+          width: 50%; }
+        #resume .container .mySkill.showLineBar .line .per40 {
+          width: 40%; }
+        #resume .container .mySkill.showLineBar .line .per30 {
+          width: 30%; }
+        #resume .container .mySkill.showLineBar .line .per20 {
+          width: 20%; }
+        #resume .container .mySkill.showLineBar .line .per10 {
+          width: 10%; }
+  #project .container .project {
+    flex-direction: column; }
+    #project .container .project .slideImg {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 1.5rem; }
+    #project .container .project .projectIntro h3, #project .container .project .projectIntro p {
+      margin: 0 5%; }
+  #contact .container {
+    flex-direction: column; }
+    #contact .container .contactInfo {
+      margin-bottom: 2rem; }
+      #contact .container .contactInfo .socialContact li {
+        font-size: 1rem; }
+        #contact .container .contactInfo .socialContact li span {
+          font-size: 1.2rem; }
+    #contact .container .contactForm {
+      width: 90%;
+      margin: 0 auto; }
   footer .container {
     flex-wrap: wrap; }
     footer .container .info {
@@ -409,6 +472,17 @@ footer {
     width: 80px;
     line-height: 80px;
     font-size: 0.8rem; }
+  #resume .container .resumeInfo h1 {
+    font-size: 3rem; }
+  #resume .container .resumeInfo .intro {
+    flex-direction: column;
+    align-items: flex-start; }
+    #resume .container .resumeInfo .intro .circle {
+      margin-bottom: 1rem; }
+  #project .projectLatest h1 {
+    font-size: 3rem; }
+  #contact .container .contactInfo h1 {
+    font-size: 3rem; }
   footer .container {
     flex-direction: column; }
     footer .container .info {

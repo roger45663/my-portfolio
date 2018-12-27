@@ -32,7 +32,6 @@ h1,h2,h3,h4,h5,h6,p,ul {
 a {
     text-decoration: none;
 }
-
 //end global setup
 
 //start header
@@ -76,7 +75,6 @@ header {
         }
     }
 }
-
 //end header
 
 // start home page
@@ -156,7 +154,6 @@ header {
         }
     }
 }
-
 // end home page
 
 // start resume page
@@ -185,7 +182,6 @@ header {
                 display: flex;
                 align-items: center;
 
-
                 .circle {
                     width: 120px;
                     height: 120px;
@@ -207,21 +203,28 @@ header {
 
                     h4 {
                         color: $titleColor;
-                        font-weight: 400;
+                        font-weight: 700;
                         line-height: 1.4rem;
-                        margin-bottom: 1rem;
+                        margin-bottom: 0.3rem;
                     }
 
                     p {
                         color: #4D4D4D;
-                        font-size: 0.8rem;
-                        line-height: 1.2rem;
+                        line-height: 1.6rem;
                     }
                 }
 
                 &.education {
                     .circle {
                         padding: 50px 10px;
+                    }
+                }
+            }
+
+            .intro.workExp {
+                .context {
+                    .workPart {
+                        margin-bottom: 2rem;
                     }
                 }
             }
@@ -266,7 +269,6 @@ header {
         
     }
 }
-
 // end resume page
 
 // start project page
@@ -289,9 +291,16 @@ header {
 
             .slideImg {
                 margin-right: 5%;
+                flex: 5;
+
+                img {
+                    width: 100%;
+                }
             }
 
             .projectIntro {
+                flex: 5;
+
                 .circle {
                     width: 96px;
                     height: 96px;
@@ -328,7 +337,6 @@ header {
     }
     
 }
-
 // end project page
 
 // start contact page
@@ -349,6 +357,7 @@ header {
             h1 {
                 font-size: 5rem;
                 font-weight: 400;
+                margin-right: 2rem;
                 color: $titleColor;
             }
 

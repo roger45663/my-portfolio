@@ -1,4 +1,3 @@
-@import 'config';
 
 // start xl size 768px
 @media screen and (max-width: 768px) {
@@ -23,7 +22,6 @@
             }
         }
     }
-
     // end header page
 
     // start home page
@@ -54,10 +52,8 @@
             }
         }
     }
-
     // end home page
 }
-
 // end xl size 768px
 
 // start lg size 767px 
@@ -156,7 +152,6 @@
             }
         }
     }
-
     // end header page
 
     // start home page
@@ -172,8 +167,134 @@
             }
         }
     }
-
     // end home page
+
+    // start resume page
+    #resume {
+        .container {
+            flex-direction: column;
+
+            .resumeInfo {
+                width: 90%;
+            }
+
+            .mySkill {
+                width: 90%;
+                margin-left: 5%;
+                margin-top: 6rem;
+
+                li {
+                    margin-bottom: 1rem;
+                }
+
+                &.showLineBar {
+                    .line {
+                        width: 90%;
+                        height: 1rem;
+                        border-radius: 1rem;
+                        overflow: hidden;
+                        background: $primaryColor;
+
+                        .percent {
+                            background: $secondaryColor;
+                            height: 100%;
+                        }
+
+                        .per90 {
+                                width: 90%;
+                            }
+
+                        .per80 {
+                            width: 80%;
+                        }
+
+                        .per70 {
+                            width: 70%;
+                        }
+
+                        .per60 {
+                            width: 60%;
+                        }
+
+                        .per50 {
+                            width: 50%;
+                        }
+
+                        .per40 {
+                            width: 40%;
+                        }
+
+                        .per30 {
+                            width: 30%;
+                        }
+
+                        .per20 {
+                            width: 20%;
+                        }
+
+                        .per10 {
+                            width: 10%;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    // end resume page
+
+    // start project page
+    #project {
+        .container {
+            .project {
+                flex-direction: column;
+
+                .slideImg {
+                    width: 90%;
+                    margin: 0 auto;
+                    margin-bottom: 1.5rem;
+                }
+
+                .projectIntro {
+                    h3, p {
+                        margin: 0 5%;
+                    }
+                }
+            }
+        }
+    }
+    // end project page
+
+    // start contact page
+    #contact {
+        .container {
+            flex-direction: column;
+
+            .contactInfo {
+                margin-bottom: 2rem;
+
+                .socialContact {
+                    .fab {
+                    }
+
+                    li {
+                        font-size: 1rem;
+
+                        span {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+                
+            }
+
+            .contactForm {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+    // end contact page
 
     // start footer page
     footer {
@@ -186,10 +307,8 @@
             }
         }
     }
-
     // end footer page
 }
-
 // end lg size 767px 
 
 
@@ -199,7 +318,6 @@
     header {
         padding: 2rem 0;
     }
-
     // end header
 
     // start home page
@@ -224,8 +342,50 @@
             }
         }
     }
-
     // end home page
+
+    // start resume page
+    #resume {
+        .container {
+            .resumeInfo {
+                h1 {
+                    font-size: 3rem;
+                }
+
+                .intro {
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .circle {
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    // end resume page
+
+    // start project page
+    #project {
+        .projectLatest {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+    // end project page
+
+    // start contact page
+    #contact {
+        .container {
+            .contactInfo {
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+    // end contact page
 
     // start footer
     footer {
@@ -266,7 +426,6 @@
     }
     // end footer
 }
-
 // end md size 450px 
 
 // start sm size 375px 
@@ -308,5 +467,4 @@
     }
     // end home page
 }
-
 // end sm size 375px
