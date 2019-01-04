@@ -182,7 +182,13 @@ header {
         margin-right: 5%;
         flex: 5; }
         #project .projectLatest .project .slideImg img {
-          width: 100%; }
+          width: 100%;
+          transition: 0.5s ease; }
+          #project .projectLatest .project .slideImg img:hover {
+            transform: translate(10px, -10px);
+            box-shadow: -10px 10px 25px 5px #c2c2c2;
+            -webkit-filter: opacity(85%);
+            filter: opacity(85%); }
       #project .projectLatest .project .projectIntro {
         flex: 5; }
         #project .projectLatest .project .projectIntro .circle {
@@ -199,14 +205,17 @@ header {
         #project .projectLatest .project .projectIntro h3 {
           color: #4d4d4d;
           font-size: 1.1rem;
-          font-weight: 400;
+          font-weight: 600;
           margin-bottom: 1.5rem; }
         #project .projectLatest .project .projectIntro p {
           color: #4D4D4D;
-          font-size: 0.9rem;
           line-height: 1.3rem; }
         #project .projectLatest .project .projectIntro hr {
           margin: 1rem 0; }
+        #project .projectLatest .project .projectIntro li {
+          margin-bottom: 0.5rem;
+          line-height: 1.5rem;
+          color: #4D4D4D; }
 
 #contact {
   margin-top: 3rem;
@@ -442,7 +451,7 @@ footer {
       width: 90%;
       margin: 0 auto;
       margin-bottom: 1.5rem; }
-    #project .container .project .projectIntro h3, #project .container .project .projectIntro p {
+    #project .container .project .projectIntro p {
       margin: 0 5%; }
   #contact .container {
     flex-direction: column; }
