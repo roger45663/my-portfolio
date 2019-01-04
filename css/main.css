@@ -140,6 +140,8 @@ header {
           padding: 50px 10px; }
       #resume .container .resumeInfo .intro.workExp .context .workPart {
         margin-bottom: 2rem; }
+      #resume .container .resumeInfo .intro.workExp .context .workPart.workPart3 {
+        margin-bottom: 0.2rem; }
     #resume .container .mySkill {
       width: 20%;
       margin-right: 5%;
@@ -484,13 +486,17 @@ footer {
     width: 80px;
     line-height: 80px;
     font-size: 0.8rem; }
-  #resume .container .resumeInfo h1 {
-    font-size: 3rem; }
-  #resume .container .resumeInfo .intro {
-    flex-direction: column;
-    align-items: flex-start; }
-    #resume .container .resumeInfo .intro .circle {
-      margin-bottom: 1rem; }
+  #resume {
+    margin-bottom: 2rem; }
+    #resume .container .resumeInfo h1 {
+      font-size: 3rem; }
+    #resume .container .resumeInfo .intro {
+      flex-direction: column;
+      align-items: flex-start; }
+      #resume .container .resumeInfo .intro .circle {
+        margin-bottom: 1rem; }
+    #resume .container .mySkill {
+      margin-top: 3rem; }
   #project .projectLatest h1 {
     font-size: 3rem; }
   #contact .container .contactInfo h1 {
