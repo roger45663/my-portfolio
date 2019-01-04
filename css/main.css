@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+* {
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #eae5e5;
+  font-family: 'Roboto', 'Microsoft JhengHei', sans-serif; }
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 3%; }
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+header {
+  padding: 3rem 0; }
+  header .container {
+    display: flex;
+    align-items: flex-end; }
+    header .container .author {
+      text-transform: capitalize;
+      color: #4d4d4d;
+      margin-left: 5%; }
+      header .container .author .name {
+        font-size: 3rem;
+        font-weight: 500; }
+      header .container .author .authorIntro {
+        font-weight: 500; }
+    header .container .navBar {
+      margin-left: 2rem; }
+      header .container .navBar a {
+        padding: 0 1rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        color: #999;
+        transition: 0.5s ease; }
+        header .container .navBar a:hover {
+          color: #61d0d4; }
+
+#home {
+  margin: 5rem 0; }
+  #home .container {
+    display: flex; }
+    #home .container .portrait img {
+      max-width: 380px;
+      height: auto;
+      border-radius: 50%; }
+    #home .container .portraitMobile {
+      display: none; }
+    #home .container .aboutMe {
+      margin-left: 5%;
+      color: #888; }
+      #home .container .aboutMe h2, #home .container .aboutMe h3 {
+        color: #4d4d4d; }
+      #home .container .aboutMe h2 {
+        font-size: 5rem; }
+      #home .container .aboutMe h3 {
+        font-size: 3rem;
+        font-weight: 300; }
+      #home .container .aboutMe p {
+        line-height: 1.3rem; }
+      #home .container .aboutMe .myBar {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1.5rem 0; }
+        #home .container .aboutMe .myBar .circle {
+          width: 130px;
+          height: auto;
+          margin-right: 1.5rem;
+          margin-top: 1.5rem;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 130px;
+          font-weight: 300;
+          font-size: 0.9rem;
+          text-transform: uppercase;
+          background: #e83556;
+          color: #fff;
+          transition: 0.5s ease; }
+          #home .container .aboutMe .myBar .circle.work {
+            background: #61d0d4; }
+          #home .container .aboutMe .myBar .circle.skills {
+            background: #d1c926; }
+          #home .container .aboutMe .myBar .circle:hover {
+            opacity: 0.8;
+            transform: scale(1.1) rotate(360deg); }
+
+#resume {
+  margin-bottom: 5rem; }
+  #resume .container {
+    display: flex; }
+    #resume .container .resumeInfo {
+      width: 65%;
+      margin: 0 5%; }
+      #resume .container .resumeInfo h1 {
+        color: #4d4d4d;
+        font-size: 5rem;
+        font-weight: 400;
+        text-transform: uppercase; }
+      #resume .container .resumeInfo hr {
+        margin: 2rem 0; }
+      #resume .container .resumeInfo .intro {
+        display: flex;
+        align-items: center; }
+        #resume .container .resumeInfo .intro .circle {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          text-align: left;
+          padding: 40px 10px;
+          margin-right: 1.5rem;
+          font-size: 0.9rem;
+          background: #e83556;
+          color: #fff; }
+          #resume .container .resumeInfo .intro .circle h3 {
+            font-weight: 400; }
+        #resume .container .resumeInfo .intro .context {
+          flex: 8; }
+          #resume .container .resumeInfo .intro .context h4 {
+            color: #4d4d4d;
+            font-weight: 700;
+            line-height: 1.4rem;
+            margin-bottom: 0.3rem; }
+          #resume .container .resumeInfo .intro .context p {
+            color: #4D4D4D;
+            line-height: 1.6rem; }
+        #resume .container .resumeInfo .intro.education .circle {
+          padding: 50px 10px; }
+      #resume .container .resumeInfo .intro.workExp .context .workPart {
+        margin-bottom: 2rem; }
+    #resume .container .mySkill {
+      width: 20%;
+      margin-right: 5%;
+      margin-top: 8rem; }
+      #resume .container .mySkill .fas {
+        width: 40px;
+        height: 40px;
+        background: #61d0d4;
+        color: #fff;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 0.5rem; }
+      #resume .container .mySkill h4 {
+        text-transform: capitalize;
+        color: #4d4d4d;
+        font-weight: 400;
+        margin: 1rem 0; }
+      #resume .container .mySkill li {
+        color: #4D4D4D;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        line-height: 1.3rem; }
+      #resume .container .mySkill .skill {
+        margin-bottom: 3rem; }
+
+#project {
+  margin: 3rem 0; }
+  #project .projectLatest {
+    padding: 0 5%; }
+    #project .projectLatest h1 {
+      color: #4d4d4d;
+      font-size: 5rem;
+      font-weight: 400;
+      text-transform: uppercase; }
+    #project .projectLatest .project {
+      display: flex;
+      margin: 3rem 0; }
+      #project .projectLatest .project .slideImg {
+        margin-right: 5%;
+        flex: 5; }
+        #project .projectLatest .project .slideImg img {
+          width: 100%; }
+      #project .projectLatest .project .projectIntro {
+        flex: 5; }
+        #project .projectLatest .project .projectIntro .circle {
+          width: 96px;
+          height: 96px;
+          background: #61d0d4;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 96px; }
+          #project .projectLatest .project .projectIntro .circle h3 {
+            color: #fff;
+            font-weight: 400;
+            font-size: 1.1rem; }
+        #project .projectLatest .project .projectIntro h3 {
+          color: #4d4d4d;
+          font-size: 1.1rem;
+          font-weight: 400;
+          margin-bottom: 1.5rem; }
+        #project .projectLatest .project .projectIntro p {
+          color: #4D4D4D;
+          font-size: 0.9rem;
+          line-height: 1.3rem; }
+        #project .projectLatest .project .projectIntro hr {
+          margin: 1rem 0; }
+
+#contact {
+  margin-top: 3rem;
+  margin-bottom: 8rem; }
+  #contact .container {
+    display: flex;
+    justify-content: space-between; }
+    #contact .container .contactInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 5%; }
+      #contact .container .contactInfo h1 {
+        font-size: 5rem;
+        font-weight: 400;
+        margin-right: 2rem;
+        color: #4d4d4d; }
+      #contact .container .contactInfo .socialContact .contactIcon {
+        margin-bottom: 1rem; }
+        #contact .container .contactInfo .socialContact .contactIcon .fab {
+          width: 30px;
+          height: 30px;
+          color: #eae5e5;
+          background: #000;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 30px;
+          transition: 0.5s ease; }
+          #contact .container .contactInfo .socialContact .contactIcon .fab:hover {
+            opacity: 0.7; }
+      #contact .container .contactInfo .socialContact li {
+        font-size: 0.8rem; }
+        #contact .container .contactInfo .socialContact li span {
+          font-size: 0.9rem;
+          font-weight: 500; }
+    #contact .container .contactForm {
+      margin-right: 5%;
+      width: 50%; }
+      #contact .container .contactForm form {
+        display: flex;
+        flex-direction: column; }
+        #contact .container .contactForm form input, #contact .container .contactForm form .contactMsg {
+          background: #e83556;
+          resize: none;
+          margin-bottom: 0.3rem;
+          padding: 0.6rem;
+          outline: none;
+          border: none; }
+          #contact .container .contactForm form input::placeholder, #contact .container .contactForm form .contactMsg::placeholder {
+            color: #fff;
+            font-size: 0.9rem;
+            letter-spacing: 0.1rem; }
+        #contact .container .contactForm form .btnSend {
+          width: 4rem;
+          margin-left: auto;
+          padding: 5px 0;
+          font-size: 1rem;
+          background: #61d0d4;
+          color: #fff;
+          border: none;
+          cursor: pointer; }
+          #contact .container .contactForm form .btnSend:hover, #contact .container .contactForm form .btnSend:focus {
+            opacity: 0.7; }
+
+footer {
+  background: #e83556;
+  padding: 2rem 0;
+  margin-bottom: 3rem; }
+  footer .container {
+    display: flex;
+    justify-content: space-between; }
+    footer .container .info {
+      display: flex;
+      color: #fff;
+      font-size: 0.5rem; }
+      footer .container .info .fas, footer .container .info .far {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        border-radius: 50%;
+        text-align: center;
+        color: #e83556;
+        background: #61d0d4; }
+      footer .container .info .socialMedia {
+        margin-top: 0.5rem; }
+        footer .container .info .socialMedia a {
+          margin-right: 0.5rem; }
+          footer .container .info .socialMedia a .fab {
+            color: #fff;
+            font-size: 1rem;
+            transition: 0.5s ease; }
+            footer .container .info .socialMedia a .fab:hover {
+              transform: scale(1.3); }
+      footer .container .info p {
+        line-height: 1.2rem; }
+
+@media screen and (max-width: 768px) {
+  header .container {
+    align-items: baseline; }
+    header .container .author {
+      width: 80%; }
+    header .container .navBar {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 0; }
+      header .container .navBar a {
+        font-size: 1.5rem;
+        margin-bottom: 1rem; }
+  #home {
+    margin-top: 0;
+    margin-bottom: 4rem; }
+    #home .container {
+      flex-direction: column; }
+      #home .container .portrait {
+        display: none; }
+      #home .container .portraitMobile {
+        display: block;
+        text-align: center;
+        margin: 2.5rem 0; }
+        #home .container .portraitMobile img {
+          width: 80%;
+          border-radius: 50%; }
+      #home .container .myIntro {
+        padding-right: 5%; } }
+
+@media screen and (max-width: 767px) {
+  header .container {
+    flex-direction: column; }
+    header .container .navBar {
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      background: #4d4d4d;
+      z-index: 1;
+      opacity: 0;
+      transition: 0.5s ease; }
+      header .container .navBar a {
+        display: none;
+        width: 50%;
+        margin-bottom: 2rem;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #fff;
+        text-align: center; }
+        header .container .navBar a:nth-child(1) {
+          margin-top: 200px; }
+    header .container .btnHam {
+      width: 50px;
+      height: 50px;
+      background: #4d4d4d;
+      border-radius: 5px;
+      padding-top: 0.7rem;
+      position: fixed;
+      top: 50px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 2; }
+      header .container .btnHam .btnLine {
+        display: block;
+        width: 60%;
+        height: 3px;
+        margin: 0 auto;
+        margin-bottom: 0.6rem;
+        background: #fff;
+        transition: 0.5s ease; }
+  .showNav .navBar {
+    opacity: 1 !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+    .showNav .navBar a {
+      display: block !important; }
+      .showNav .navBar a:hover, .showNav .navBar a:focus {
+        color: #e83556 !important; }
+  .showNav .btnHam .btnLine:nth-child(1) {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: rotate(405deg); }
+  .showNav .btnHam .btnLine:nth-child(2) {
+    display: none;
+    transform: rotate(360deg); }
+  .showNav .btnHam .btnLine:nth-child(3) {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: rotate(-405deg); }
+  #home .container .aboutMe .myBar .circle {
+    width: 100px;
+    line-height: 100px; }
+  #resume .container {
+    flex-direction: column; }
+    #resume .container .resumeInfo {
+      width: 90%; }
+    #resume .container .mySkill {
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 6rem; }
+      #resume .container .mySkill li {
+        margin-bottom: 1rem; }
+      #resume .container .mySkill.showLineBar .line {
+        width: 90%;
+        height: 1rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        background: #e83556; }
+        #resume .container .mySkill.showLineBar .line .percent {
+          background: #61d0d4;
+          height: 100%; }
+        #resume .container .mySkill.showLineBar .line .per90 {
+          width: 90%; }
+        #resume .container .mySkill.showLineBar .line .per80 {
+          width: 80%; }
+        #resume .container .mySkill.showLineBar .line .per70 {
+          width: 70%; }
+        #resume .container .mySkill.showLineBar .line .per60 {
+          width: 60%; }
+        #resume .container .mySkill.showLineBar .line .per50 {
+          width: 50%; }
+        #resume .container .mySkill.showLineBar .line .per40 {
+          width: 40%; }
+        #resume .container .mySkill.showLineBar .line .per30 {
+          width: 30%; }
+        #resume .container .mySkill.showLineBar .line .per20 {
+          width: 20%; }
+        #resume .container .mySkill.showLineBar .line .per10 {
+          width: 10%; }
+  #project .container .project {
+    flex-direction: column; }
+    #project .container .project .slideImg {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 1.5rem; }
+    #project .container .project .projectIntro h3, #project .container .project .projectIntro p {
+      margin: 0 5%; }
+  #contact .container {
+    flex-direction: column; }
+    #contact .container .contactInfo {
+      margin-bottom: 2rem; }
+      #contact .container .contactInfo .socialContact li {
+        font-size: 1rem; }
+        #contact .container .contactInfo .socialContact li span {
+          font-size: 1.2rem; }
+    #contact .container .contactForm {
+      width: 90%;
+      margin: 0 auto; }
+  footer .container {
+    flex-wrap: wrap; }
+    footer .container .info {
+      width: 50%;
+      margin-bottom: 1rem; } }
+
+@media screen and (max-width: 450px) {
+  header {
+    padding: 2rem 0; }
+  #home .container .aboutMe h2 {
+    font-size: 4rem; }
+  #home .container .aboutMe h3 {
+    font-size: 2.5rem; }
+  #home .container .aboutMe .myBar .circle {
+    width: 80px;
+    line-height: 80px;
+    font-size: 0.8rem; }
+  #resume .container .resumeInfo h1 {
+    font-size: 3rem; }
+  #resume .container .resumeInfo .intro {
+    flex-direction: column;
+    align-items: flex-start; }
+    #resume .container .resumeInfo .intro .circle {
+      margin-bottom: 1rem; }
+  #project .projectLatest h1 {
+    font-size: 3rem; }
+  #contact .container .contactInfo h1 {
+    font-size: 3rem; }
+  footer .container {
+    flex-direction: column; }
+    footer .container .info {
+      width: 100%;
+      align-items: center; }
+      footer .container .info .icon .fas, footer .container .info .icon .far {
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+        line-height: 4rem; }
+      footer .container .info h6 {
+        font-size: 1.5rem; }
+      footer .container .info p {
+        font-size: 1rem; }
+      footer .container .info .infoFollow .socialMedia .fab {
+        font-size: 1.5rem; } }
+
+@media screen and (max-width: 375px) {
+  header .container .author .name {
+    font-size: 2rem; }
+  #home .container .aboutMe h2 {
+    font-size: 3rem; }
+  #home .container .aboutMe h3 {
+    font-size: 2rem; }
+  #home .container .aboutMe .myBar {
+    margin: 0; }
+    #home .container .aboutMe .myBar .circle {
+      margin-right: 5%; } }
