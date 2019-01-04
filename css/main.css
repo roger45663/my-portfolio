@@ -453,17 +453,20 @@ footer {
       margin-bottom: 1.5rem; }
     #project .container .project .projectIntro p {
       margin: 0 5%; }
-  #contact .container {
-    flex-direction: column; }
-    #contact .container .contactInfo {
-      margin-bottom: 2rem; }
-      #contact .container .contactInfo .socialContact li {
-        font-size: 1rem; }
-        #contact .container .contactInfo .socialContact li span {
-          font-size: 1.2rem; }
-    #contact .container .contactForm {
-      width: 90%;
-      margin: 0 auto; }
+  #contact {
+    margin-top: 0;
+    margin-bottom: 3rem; }
+    #contact .container {
+      flex-direction: column; }
+      #contact .container .contactInfo {
+        margin-bottom: 2rem; }
+        #contact .container .contactInfo .socialContact li {
+          font-size: 1rem; }
+          #contact .container .contactInfo .socialContact li span {
+            font-size: 1.2rem; }
+      #contact .container .contactForm {
+        width: 90%;
+        margin: 0 auto; }
   footer .container {
     flex-wrap: wrap; }
     footer .container .info {
