@@ -295,7 +295,18 @@ header {
 
                 img {
                     width: 100%;
+                    @include ease;  
+
+
+                    &:hover {
+                    transform: translate(10px, -10px);
+                    box-shadow: -10px 10px 25px 5px rgb(194, 194, 194);
+                    -webkit-filter: opacity(85%);
+                    filter: opacity(85%);
                 }
+                }
+
+                
             }
 
             .projectIntro {
@@ -319,18 +330,23 @@ header {
                 h3 {
                     color: $titleColor;
                     font-size: 1.1rem;
-                    font-weight: 400;
+                    font-weight: 600;
                     margin-bottom: 1.5rem;
                 }
 
                 p {
                     color: #4D4D4D;
-                    font-size: 0.9rem;
                     line-height: 1.3rem;
                 }
 
                 hr {
                     margin: 1rem 0;
+                }
+
+                li {
+                    margin-bottom: 0.5rem;
+                    line-height: 1.5rem;
+                    color: #4D4D4D;
                 }
             }
         }
