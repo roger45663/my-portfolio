@@ -125,7 +125,7 @@
             a {
                 display: block !important;
 
-                &:hover,&:focus {
+                &:focus ,&:hover {
                     color: $primaryColor !important;
                 }
             }
@@ -171,6 +171,7 @@
 
     // start resume page
     #resume {
+
         .container {
             flex-direction: column;
 
@@ -347,6 +348,8 @@
 
     // start resume page
     #resume {
+        margin-bottom: 2rem;
+
         .container {
             .resumeInfo {
                 h1 {
@@ -360,7 +363,13 @@
                     .circle {
                         margin-bottom: 1rem;
                     }
+
+                    
                 }
+            }
+
+            .mySkill {
+                margin-top: 3rem;
             }
         }
     }

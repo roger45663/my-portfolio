@@ -46,7 +46,7 @@ header {
         text-transform: uppercase;
         color: #999;
         transition: 0.5s ease; }
-        header .container .navBar a:hover {
+        header .container .navBar a:focus, header .container .navBar a:hover {
           color: #61d0d4; }
 
 #home {
@@ -93,7 +93,7 @@ header {
             background: #61d0d4; }
           #home .container .aboutMe .myBar .circle.skills {
             background: #d1c926; }
-          #home .container .aboutMe .myBar .circle:hover {
+          #home .container .aboutMe .myBar .circle:focus, #home .container .aboutMe .myBar .circle:hover {
             opacity: 0.8;
             transform: scale(1.1) rotate(360deg); }
 
@@ -140,6 +140,8 @@ header {
           padding: 50px 10px; }
       #resume .container .resumeInfo .intro.workExp .context .workPart {
         margin-bottom: 2rem; }
+      #resume .container .resumeInfo .intro.workExp .context .workPart.workPart3 {
+        margin-bottom: 0.2rem; }
     #resume .container .mySkill {
       width: 20%;
       margin-right: 5%;
@@ -184,7 +186,7 @@ header {
         #project .projectLatest .project .slideImg img {
           width: 100%;
           transition: 0.5s ease; }
-          #project .projectLatest .project .slideImg img:hover {
+          #project .projectLatest .project .slideImg img:focus, #project .projectLatest .project .slideImg img:hover {
             transform: translate(10px, -10px);
             box-shadow: -10px 10px 25px 5px #c2c2c2;
             -webkit-filter: opacity(85%);
@@ -244,7 +246,7 @@ header {
           text-align: center;
           line-height: 30px;
           transition: 0.5s ease; }
-          #contact .container .contactInfo .socialContact .contactIcon .fab:hover {
+          #contact .container .contactInfo .socialContact .contactIcon .fab:focus, #contact .container .contactInfo .socialContact .contactIcon .fab:hover {
             opacity: 0.7; }
       #contact .container .contactInfo .socialContact li {
         font-size: 0.8rem; }
@@ -277,7 +279,7 @@ header {
           color: #fff;
           border: none;
           cursor: pointer; }
-          #contact .container .contactForm form .btnSend:hover, #contact .container .contactForm form .btnSend:focus {
+          #contact .container .contactForm form .btnSend:focus, #contact .container .contactForm form .btnSend:hover {
             opacity: 0.7; }
 
 footer {
@@ -309,7 +311,7 @@ footer {
             color: #fff;
             font-size: 1rem;
             transition: 0.5s ease; }
-            footer .container .info .socialMedia a .fab:hover {
+            footer .container .info .socialMedia a .fab:focus, footer .container .info .socialMedia a .fab:hover {
               transform: scale(1.3); }
       footer .container .info p {
         line-height: 1.2rem; }
@@ -390,7 +392,7 @@ footer {
     bottom: 0; }
     .showNav .navBar a {
       display: block !important; }
-      .showNav .navBar a:hover, .showNav .navBar a:focus {
+      .showNav .navBar a:focus, .showNav .navBar a:hover {
         color: #e83556 !important; }
   .showNav .btnHam .btnLine:nth-child(1) {
     position: absolute;
@@ -484,13 +486,17 @@ footer {
     width: 80px;
     line-height: 80px;
     font-size: 0.8rem; }
-  #resume .container .resumeInfo h1 {
-    font-size: 3rem; }
-  #resume .container .resumeInfo .intro {
-    flex-direction: column;
-    align-items: flex-start; }
-    #resume .container .resumeInfo .intro .circle {
-      margin-bottom: 1rem; }
+  #resume {
+    margin-bottom: 2rem; }
+    #resume .container .resumeInfo h1 {
+      font-size: 3rem; }
+    #resume .container .resumeInfo .intro {
+      flex-direction: column;
+      align-items: flex-start; }
+      #resume .container .resumeInfo .intro .circle {
+        margin-bottom: 1rem; }
+    #resume .container .mySkill {
+      margin-top: 3rem; }
   #project .projectLatest h1 {
     font-size: 3rem; }
   #contact .container .contactInfo h1 {
