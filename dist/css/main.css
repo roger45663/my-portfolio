@@ -521,6 +521,8 @@ footer {
 @media screen and (max-width: 375px) {
   header .container .author .name {
     font-size: 2rem; }
+  header .container .navBar a:nth-child(1) {
+    margin-top: 5.5rem; }
   #home .container .aboutMe h2 {
     font-size: 3rem; }
   #home .container .aboutMe h3 {
