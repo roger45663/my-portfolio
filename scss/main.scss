@@ -5,7 +5,9 @@
 
 //start global setup
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 16px;
 }
 
 html,body {
@@ -39,8 +41,12 @@ header {
     padding: 3rem 0;
 
     .container {
+        display: -webkit-box;
         display: flex;
-        align-items: flex-end;
+        -ms-display: flex;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
 
         .author {
             text-transform: capitalize;
@@ -82,7 +88,9 @@ header {
     margin: 5rem 0;
 
     .container {
+        display: -webkit-box;
         display: flex;
+        -ms-display: flex;
 
         .portrait {
             img {
@@ -118,8 +126,11 @@ header {
             }
 
             .myBar {
+                display: -webkit-box;
                 display: flex;
-                flex-wrap: wrap;
+                -ms-display: flex;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
                 margin: 1.5rem 0;
                 
                 .circle {
@@ -147,7 +158,8 @@ header {
 
                     &:focus ,&:hover {
                         opacity: 0.8;
-                        transform: scale(1.1) rotate(360deg);
+                        -webkit-transform: scale(1.1) rotate(360deg);
+                                transform: scale(1.1) rotate(360deg);
                     }
                 }
             }
@@ -161,7 +173,9 @@ header {
     margin-bottom: 5rem;
 
     .container {
+        display: -webkit-box;
         display: flex;
+        -ms-display: flex;
         
         .resumeInfo {
             width: 65%;
@@ -179,8 +193,12 @@ header {
             }
 
             .intro {
+                display: -webkit-box;
                 display: flex;
-                align-items: center;
+                -ms-display: flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
 
                 .circle {
                     width: 120px;
@@ -201,7 +219,9 @@ header {
                 }
 
                 .context {
-                    flex: 8;
+                    -webkit-box-flex: 8;
+                        -ms-flex: 8;
+                            flex: 8;
 
                     h4 {
                         color: $titleColor;
@@ -294,12 +314,16 @@ header {
         }
 
         .project {
+            display: -webkit-box;
             display: flex;
+            -ms-display: flex;
             margin: 3rem 0;
 
             .slideImg {
                 margin-right: 5%;
-                flex: 5;
+                -webkit-box-flex: 5;
+                    -ms-flex: 5;
+                        flex: 5;
 
                 img {
                     width: 100%;
@@ -307,8 +331,10 @@ header {
 
 
                     &:focus ,&:hover {
-                    transform: translate(10px, -10px);
-                    box-shadow: -10px 10px 25px 5px rgb(194, 194, 194);
+                    -webkit-transform: translate(10px, -10px);
+                            transform: translate(10px, -10px);
+                    -webkit-box-shadow: -10px 10px 25px 5px rgb(194, 194, 194);
+                            box-shadow: -10px 10px 25px 5px rgb(194, 194, 194);
                     -webkit-filter: opacity(85%);
                     filter: opacity(85%);
                 }
@@ -318,7 +344,9 @@ header {
             }
 
             .projectIntro {
-                flex: 5;
+                -webkit-box-flex: 5;
+                    -ms-flex: 5;
+                        flex: 5;
 
                 .circle {
                     width: 96px;
@@ -369,13 +397,24 @@ header {
     margin-bottom: 8rem;
 
     .container {
+        display: -webkit-box;
         display: flex;
-        justify-content: space-between;
+        -ms-display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
 
         .contactInfo {
+            display: -webkit-box;
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            -ms-display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             margin-left: 5%;
 
             h1 {
@@ -421,8 +460,13 @@ header {
             width: 50%;
 
             form {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                flex-direction: column;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
 
                 input, .contactMsg {
                     background: $primaryColor;
@@ -431,6 +475,24 @@ header {
                     padding: 0.6rem;
                     outline: none;
                     border: none;
+                    
+                    &::-webkit-input-placeholder {
+                        color: #fff;
+                        font-size: 0.9rem;
+                        letter-spacing: 0.1rem;
+                    }
+                    
+                    &:-ms-input-placeholder {
+                        color: #fff;
+                        font-size: 0.9rem;
+                        letter-spacing: 0.1rem;
+                    }
+                    
+                    &::-ms-input-placeholder {
+                        color: #fff;
+                        font-size: 0.9rem;
+                        letter-spacing: 0.1rem;
+                    }
                     
                     &::placeholder {
                         color: #fff;
@@ -467,11 +529,17 @@ footer {
     margin-bottom: 3rem;
 
     .container {
+        display: -webkit-box;
         display: flex;
-        justify-content: space-between;
+        -ms-display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
 
         .info {
+            display: -webkit-box;
             display: flex;
+            -ms-display: flex;
             color: #fff;
             font-size: 0.5rem;
 
@@ -499,7 +567,8 @@ footer {
                         @include ease;
 
                         &:focus ,&:hover {
-                            transform: scale(1.3);
+                            -webkit-transform: scale(1.3);
+                                    transform: scale(1.3);
                         }
                     }
                 }

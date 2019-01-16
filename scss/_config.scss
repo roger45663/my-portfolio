@@ -9,6 +9,7 @@ $titleColor: #4d4d4d;
 
 // start mixin
 @mixin ease {
+    -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
 }
 
