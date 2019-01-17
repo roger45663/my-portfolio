@@ -61,6 +61,21 @@
         }
     }
     // end home page
+
+    // start footer
+    footer {
+        padding-bottom: 0.5rem;
+
+        .container {
+            flex-wrap: wrap;
+
+            .info {
+                width: 50%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    // end footer
 }
 // end xl size 768px
 
@@ -411,6 +426,8 @@
 
     // start project page
     #project {
+        margin-top: 0;
+
         .projectLatest {
             h1 {
                 font-size: 3rem;
@@ -444,6 +461,7 @@
                 -webkit-box-align: center;
                     -ms-flex-align: center;
                         align-items: center;
+                        
 
                 .icon {
                     .fas,.far {

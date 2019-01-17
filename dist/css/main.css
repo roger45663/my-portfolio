@@ -419,7 +419,14 @@ footer {
           width: 80%;
           border-radius: 50%; }
       #home .container .myIntro {
-        padding-right: 5%; } }
+        padding-right: 5%; }
+  footer {
+    padding-bottom: 0.5rem; }
+    footer .container {
+      flex-wrap: wrap; }
+      footer .container .info {
+        width: 50%;
+        margin-bottom: 1rem; } }
 
 @media screen and (max-width: 767px) {
   header .container {
@@ -601,8 +608,10 @@ footer {
         margin-bottom: 1rem; }
     #resume .container .mySkill {
       margin-top: 3rem; }
-  #project .projectLatest h1 {
-    font-size: 3rem; }
+  #project {
+    margin-top: 0; }
+    #project .projectLatest h1 {
+      font-size: 3rem; }
   #contact .container .contactInfo h1 {
     font-size: 3rem; }
   footer .container {
