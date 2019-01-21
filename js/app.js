@@ -18,31 +18,31 @@ $(document).ready(function () {
         status.empty();
 
         if(name.length >= 2) {
-            status.append('<div>Name is valid</div>');
+            $('.nameStatus').append('<div>Name is valid</div>');
         }else {
             event.preventDefault();
-            status.append('<div>Name is not valid</div>');
+            $('.nameStatus').append('<div>Name is not valid</div>');
         }
 
         if(email.length > 5 && email.includes('@') && email.includes('.')) {
-            status.append('<div>Email is valid</div>');
+            $('.emailStatus').append('<div>Email is valid</div>');
         }else {
             event.preventDefault();
-            status.append('<div>Email is not valid</div>');
+            $('.emailStatus').append('<div>Email is not valid</div>');
         }
 
-        if (subject.length > 3) {
-            status.append('<div>Subject is valid</div>');
+        if (subject.length >= 3) {
+            $('.subjectStatus').append('<div>Subject is valid</div>');
         } else {
             event.preventDefault();
-            status.append('<div>Subject is not valid</div>');
+            $('.subjectStatus').append('<div>Subject is not valid</div>');
         }
 
-        if (message.length > 20) {
-            status.append('<div>Message is valid</div>');
+        if (message.length >= 10) {
+            $('.messageStatus').append('<div>Message is valid</div>');
         } else {
             event.preventDefault();
-            status.append('<div>Message is not valid</div>');
+            $('.messageStatus').append('<div>Message is not valid</div>');
         }
     })
 });
