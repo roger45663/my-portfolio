@@ -63,11 +63,14 @@
             <div class="contactForm">
                 <form action="https://formspree.io/roger45663@gmail.com" method="POST">
                     <input type="text" name="name" placeholder="Name*" class="userName">
+                    <div class="formStatus nameStatus"></div>
                     <input type="email" name="email" placeholder="Email*" class="userEmail">
+                    <div class="formStatus emailStatus"></div>
                     <input type="text" name="subject" placeholder="Subject" class="userSubject">
+                    <div class="formStatus subjectStatus"></div>
                     <textarea class="contactMsg" name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <div class="formStatus messageStatus"></div>
                     <button type="submit" class="btnSend">send</button>
-                    <div class="formStatus"></div>
                 </form>
             </div>
         </div>
