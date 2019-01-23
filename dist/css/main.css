@@ -9,7 +9,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #eae5e5;
+  background: #FFFAFF;
   font-family: 'Roboto', 'Microsoft JhengHei', sans-serif; }
 
 .container {
@@ -54,7 +54,7 @@ header {
         -webkit-transition: 0.5s ease;
         transition: 0.5s ease; }
         header .container .navBar a:focus, header .container .navBar a:hover {
-          color: #61d0d4; }
+          color: #086788; }
 
 #home {
   margin: 5rem 0; }
@@ -98,14 +98,14 @@ header {
           font-weight: 300;
           font-size: 0.9rem;
           text-transform: uppercase;
-          background: #e83556;
+          background: #9A031E;
           color: #fff;
           -webkit-transition: 0.5s ease;
           transition: 0.5s ease; }
           #home .container .aboutMe .myBar .circle.work {
-            background: #61d0d4; }
+            background: #086788; }
           #home .container .aboutMe .myBar .circle.skills {
-            background: #d1c926; }
+            background: #FED766; }
           #home .container .aboutMe .myBar .circle:focus, #home .container .aboutMe .myBar .circle:hover {
             opacity: 0.8;
             -webkit-transform: scale(1.1) rotate(360deg);
@@ -142,7 +142,7 @@ header {
           padding: 40px 10px;
           margin-right: 1.5rem;
           font-size: 0.9rem;
-          background: #e83556;
+          background: #9A031E;
           color: #fff; }
           #resume .container .resumeInfo .intro .circle h3 {
             font-weight: 400; }
@@ -171,7 +171,7 @@ header {
       #resume .container .mySkill .fas {
         width: 40px;
         height: 40px;
-        background: #61d0d4;
+        background: #086788;
         color: #fff;
         font-size: 1.5rem;
         border-radius: 50%;
@@ -227,7 +227,7 @@ header {
         #project .projectLatest .project .projectIntro .circle {
           width: 96px;
           height: 96px;
-          background: #61d0d4;
+          background: #086788;
           border-radius: 50%;
           text-align: center;
           line-height: 96px; }
@@ -282,7 +282,7 @@ header {
         #contact .container .contactInfo .socialContact .contactIcon .fab {
           width: 30px;
           height: 30px;
-          color: #eae5e5;
+          color: #FFFAFF;
           background: #000;
           border-radius: 50%;
           text-align: center;
@@ -308,7 +308,7 @@ header {
         -ms-flex-direction: column;
         flex-direction: column; }
         #contact .container .contactForm form input, #contact .container .contactForm form .contactMsg {
-          background: #e83556;
+          background: #9A031E;
           resize: none;
           margin-bottom: 0.3rem;
           padding: 0.6rem;
@@ -335,17 +335,17 @@ header {
           margin-left: auto;
           padding: 5px 0;
           font-size: 1rem;
-          background: #61d0d4;
+          background: #086788;
           color: #fff;
           border: none;
           cursor: pointer; }
           #contact .container .contactForm form .btnSend:focus, #contact .container .contactForm form .btnSend:hover {
             opacity: 0.7; }
         #contact .container .contactForm form .formStatus {
-          color: #e83556; }
+          color: #9A031E; }
 
 footer {
-  background: #e83556;
+  background: #9A031E;
   padding: 2rem 0;
   margin-bottom: 3rem; }
   footer .container {
@@ -369,8 +369,8 @@ footer {
         line-height: 2.5rem;
         border-radius: 50%;
         text-align: center;
-        color: #e83556;
-        background: #61d0d4; }
+        color: #9A031E;
+        background: #086788; }
       footer .container .info .socialMedia {
         margin-top: 0.5rem; }
         footer .container .info .socialMedia a {
@@ -488,7 +488,7 @@ footer {
     .showNav .navBar a {
       display: block !important; }
       .showNav .navBar a:focus, .showNav .navBar a:hover {
-        color: #e83556 !important; }
+        color: #9A031E !important; }
   .showNav .btnHam .btnLine:nth-child(1) {
     position: absolute;
     top: 50%;
@@ -526,9 +526,9 @@ footer {
         height: 1rem;
         border-radius: 1rem;
         overflow: hidden;
-        background: #e83556; }
+        background: #9A031E; }
         #resume .container .mySkill.showLineBar .line .percent {
-          background: #61d0d4;
+          background: #086788;
           height: 100%; }
         #resume .container .mySkill.showLineBar .line .per90 {
           width: 90%; }
